@@ -1,6 +1,6 @@
 
 fun main() {
-    println("ByteBloom Academy: Ecosystem Project Starter")
+    println("ByteBloom Academy: Ecosystem Project Starter ")
     val parsedTeams = parseTeamData()
     if (parsedTeams!=null) {
         println("Total teams parsed : ${parsedTeams.size}")
