@@ -1,27 +1,22 @@
 import java.io.File
-
-
-
-
-
 fun main() {
     println("ByteBloom Academy: Ecosystem Project Starter")
-    val theNewMenteess = parseMenteeRaw()
-    if (theNewMenteess!= null) {
-        println("totel menteess : {${theNewMenteess .size}}")
-    } else {
+    val theNewMentees = parseMenteeRaw()
+    if (theNewMentees!= null) {
+        println("totel menteess : {${theNewMentees.size}}")
+    }else{
         println("no  find data on mentees file")
     }
-    val theNewPerformances  = parsePerformanceRaw()
+    val theNewPerformances = parsePerformanceRaw()
     if (theNewPerformances!= null) {
         println("totel preformances : {${theNewPerformances.size}}")
-    } else {
+    }else{
         println("no  find data on predormance file")
     }
     val parsedTeams = parseTeamData()
     if (parsedTeams!= null) {
         println("Total teams parsed : ${parsedTeams.size}")
-    } else {
+    }else{
         println("No team data available for parsing .")
     }
 }
