@@ -7,13 +7,13 @@ import java.io.File
 fun main() {
     println("ByteBloom Academy: Ecosystem Project Starter")
     val theNewMenteess = parseMenteeRaw()
-    if (theNewMentees!= null) {
+    if (theNewMenteess!= null) {
         println("totel menteess : {${theNewMenteess .size}}")
     } else {
         println("no  find data on mentees file")
     }
     val theNewPerformances  = parsePerformanceRaw()
-    if (theNewPerformance!= null) {
+    if (theNewPerformances!= null) {
         println("totel preformances : {${theNewPerformances.size}}")
     } else {
         println("no  find data on predormance file")
