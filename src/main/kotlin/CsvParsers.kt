@@ -8,7 +8,7 @@ val allFileLines = File("src/main/resources/teams.csv").readLines().drop(1)
 val linesOfPerformance = File("src/main/resources/performance.csv").readLines().drop(1)
 fun parseMenteeRaw(): List<MenteeRaw> {
     return linesOfMentee.map {
-        va partsMentee = it.split(",")
+        val partsMentee = it.split(",")
         MenteeRaw(
             partsMentee[0].trim(), partsMentee[1].trim(),
             partsMentee[2].trim()
