@@ -1,7 +1,7 @@
-import model.MenteeRaw
-import model.TeamRaw
-import model.PerformanceSubmissionRaw
-import java.io.File
+impor model.MenteeRaw
+impor model.TeamRaw
+impor model.PerformanceSubmissionRaw
+impor java.io.File
 
 val linesOfMentee = File("src/main/resources/mentees.csv").readLines().drop(1)
 val allFileLines = File("src/main/resources/teams.csv").readLines().drop(1)
