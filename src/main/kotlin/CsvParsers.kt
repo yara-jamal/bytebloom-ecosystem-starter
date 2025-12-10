@@ -3,11 +3,11 @@ import model.TeamRaw
 import model.PerformanceSubmissionRaw
 import java.io.File
 
-va linesOfMentee = File("src/main/resources/mentees.csv").readLines().drop(1)
-va allFileLines = File("src/main/resources/teams.csv").readLines().drop(1)
-va linesOfPerformance = File("src/main/resources/performance.csv").readLines().drop(1)
-fu parseMenteeRaw(): List<MenteeRaw> {
-    retur linesOfMentee.map {
+val linesOfMentee = File("src/main/resources/mentees.csv").readLines().drop(1)
+val allFileLines = File("src/main/resources/teams.csv").readLines().drop(1)
+val linesOfPerformance = File("src/main/resources/performance.csv").readLines().drop(1)
+fun parseMenteeRaw(): List<MenteeRaw> {
+    return linesOfMentee.map {
         va partsMentee = it.split(",")
         MenteeRaw(
             partsMentee[0].trim(), partsMentee[1].trim(),
