@@ -20,7 +20,18 @@ fun main() {
     } else {
         println("No team data available for parsing .")
     }
-
+    //------------------------------------  Task : Week 3 -------------------------------------------
+    val domainBuilder = DomainBuilder()
+    val firstTeam = domainBuilder.buildDomainGraph()?.first()
+    if (firstTeam != null) {
+        println("---Domain graph built successfully and the first team was found for review .")
+        println("  TeamId: ${firstTeam.id}")
+        println("  Team Name : ${firstTeam.name}")
+        println("  Mentees List:")
+        firstTeam.mentees.forEach { mentee -> println("   - ${mentee.name}") }
+    } else {
+        println("Failed to build the domain graph or no teams were found .")
+    }
 
     
 
